@@ -6,7 +6,7 @@ $host  =     $_SERVER["HTTP_HOST"];
 $path  =     $http."://".$host."/Rexpress/";
 $url_style=  $path."view/style";
 $url_js=     $path."view/js";
-//cometario de nuevo para admin
+//cometario nuevo Hola admin
 ?>
     <head>
         <meta charset="UTF-8">

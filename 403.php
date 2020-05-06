@@ -1,22 +1,23 @@
 <?php
-// echo "<!DOCTYPE html>
-// <html lang='en'>
-// <head>
-//     <meta charset='UTF-8'>
-//     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-//     <meta http-equiv='X-UA-Compatible' content='ie=edge'>";
-// echo "<style type='text/css'>";
-//         include "view/style/comun-style.css";
-//         include "view/style/header-style.css";
-//         include "view/style/content-style.css";
-//         include "view/style/foot-style.css";
-// echo "</style>";
-// echo "<title>Rexpress</title>
-// </head>
-// <body>
-// <div class='contenedor-body'>";
+$http  =     $_SERVER["REQUEST_SCHEME"];
+$host  =     $_SERVER["HTTP_HOST"];
+$dirname = "/" . basename(dirname(__FILE__)) . "/";
+$path  =     $http . "://" . $host . $dirname;
+$url_style =  $path . "view/style";
+$url_js =     $path . "view/js";
 include "view/templates/head.php";
 include "view/templates/header.php";
-echo "<div class='content'>No Tiene autorizacion para acceder a este lugar</div>";
-include "view/templates/foot.php";
 ?>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4 content">403</h1>
+        <p class="lead content">Esta direccion no esta disponible.
+            Clique <a href='<?php echo "{$path}" ?>'>aqui</a> para ir a la pagina prinsipal.
+        </p>
+    </div>
+</div>
+<style>
+    .content {
+        color: black;
+    }
+</style>

@@ -1,20 +1,27 @@
 
+:root{
+    --main-bg-color: #3f51b5 ;
+    --main-txt-color: #FFFFFF;
+    --main-boton-color: #448aff;
+    --main-barra-color:#303f9f;
+}
 *{
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     text-decoration: none;
     font-size: 13px;
-    font-family: arial;
+    color: var(--main-txt-color);
+    font-family: 'Coda', cursive;
+    box-sizing: border-box;
 }
 html,body{
     height:100%;
-    width:100%;
-  }
-.contenedor-body{
-/* border: red 1px solid; */
-position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1px ;    
 }
 
+/* Popup */
 .cont-popup{
     background: rgba(0,0,0,.3);
 	position: fixed;

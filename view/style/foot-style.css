@@ -1,15 +1,10 @@
-.foot{    /* border: red solid 1px; */
-    height: 40px;
-    background:  rgb(2, 52, 114);
-    border-radius: 2px;
-    border-bottom: 2px solid rgb(1, 27, 58) ;
-    border-left: 2px solid rgb(1, 27, 58) ; 
-    color: antiquewhite;
-    text-align: center;
-    line-height: 40px;
-    
+footer{
+    position: absolute;
+    bottom:  0px ;
+    width: 100%;
+    background:  var( --main-bg-color);
+    height:30px;
 }
-.foot-fecha{
-    margin: auto;
-    font-weight: bold;
+footer .foot .foot-fecha{
+    text-align: center;
 }

@@ -1,76 +1,123 @@
-.content-cont{
-  width: 500px;
-  padding-top: 10%;
-  padding-bottom: 10%;
+.contenedor-central{
+  width: 100%;
+  height: 100%;
 }
-div.content-cont form{
-  background: white;
-  border-radius: 4px;
-  text-align: center;
-  color: black;
-  border: 1px solid  wheat;
-  padding: 4px;
+/********************** ****contenedor form **********************************************/
+.contenedor-login{
+  width: 400px;
+  padding: 40px;
+  margin: 60px auto 0;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #BDBDBD;
+  border:1px solid #BDBDBD;
+  position: static;
 }
-div.content-cont form input{
-  width: 99%;
-  height: 25px;
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: black 1px solid;
+.contenedor-login  input[type='text'],input[type='password'], input[type='submit'], input[type='email'] , input[type='file'] {
+  width: 100%;
+  height: 30px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
   border-radius: 2px;
-  outline: none;
+  color: #212121;
+  font-size: 10px;
   text-align: center;
 }
-div.content-cont form input:focus{
-  outline: brown solid 1px;
-  border: brown 1px solid;;
+.contenedor-login  input[type='submit']  { 
+  width: 100px;
+  background:var(--main-boton-color);
+  border: none;
+  border-radius: 2px;
+  color:  var(--main-txt-color);
+  position: absolute;
+  
 }
-div.content-cont form .cont-label{
-  left: -165px;
-  bottom: 3px;
-  position: relative;
-}
-div.content-cont form input[type="submit"]{
-  background: rgb(155, 155, 252);
-  outline: none;
-  border: rgb(94, 94, 241) 1px solid;
-}
-div.content-cont form input[type="submit"]:hover{
-  background: rgb(94, 94, 241);
-}
-div.content-cont form input[type="submit"]:active{
-  background: rgb(155, 155, 252);
-  border-bottom: rgb(94, 94, 241) 2px solid;
-  border-left: rgb(94, 94, 241) 2px solid;
-}
-div.content-cont form input[type="checkbox"]{
-  position: relative;
-  width: 15px;
-  height: 15px;
-  left: -163px;
-}
-div.content-cont form input[type="checkbox"]:focus{
-  outline: none;
-}
-div.content .content-cont a:hover{
-  text-decoration: underline;
-}
-div.content-link{
-  position: relative;
-}
-div.content-link a{
-  position: relative;
-  color: brown;
-}
-.alert{
-  margin: 0%;
-}
-.remove{
+.contenedor-login input[type='file']{
 
-  width: 9%;
-  border: 1px black solid;
 }
-/*relativa , ocupa el 100% de su contenedot padre
-  absoluta , ahi qye darle un with  de anchura
-*/
+.contenedor-login  input[type='submit']:hover{
+  background: var(--main-barra-color);
+  border: 1px solid blue;
+  width: 99px;
+  height: 29px;
+  font-size: 9px;
+}
+.form-logim__coten-checkbox{
+  margin-top: 90px;
+}
+.contenedor-login  input[type='checkbox'] , .form-logim__coten-checkbox label ,.contenedor-login label{
+  box-sizing: content-box;
+  color:  #757575;
+  display: inline;
+  font-size:10px;
+  text-align: center;
+}
+.contenedor-link , .contenedor-link a{
+  margin: 10px 5px;
+  color: #448aff;
+  text-align: center;
+  text-decoration: none;
+}
+.contenedor-link a:hover{
+  color: var(--main-barra-color);
+}
+/************************ fin contenedor form   ***************************************/
+/************************   contenedor home     ***************************************/
+.contenedor-home {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.fila {
+  float: left;
+  margin-left: 20px;
+  padding: 5px;
+}
+
+.fila1 {
+  width: 17%;
+  height: 500px;
+  overflow: auto;
+}
+
+.fila2 {
+  width: 57%;
+}
+
+.fila3 {
+  width: 17%;
+}
+
+.contenedor-home .list-group a {
+  background: var(--main-boton-color);
+  margin: 2px;
+  border-radius: 2px;
+  color: var(--main-txt-color);
+}
+
+.contenedor-home .list-group a:hover {
+  background: var(--main-bg-color);
+  color: var(--main-txt-color);
+}
+
+.card-txt-color {
+  color: #212121 !important;
+  font-weight: normal;
+}
+
+.txt-size {
+  font-size: 10px;
+}
+
+.activo {
+  background: var(--main-bg-color) !important;
+  color: var(--main-txt-color) !important;
+}
+
+/* modificaciones boostrap */
+label .txt-center {
+  text-align: center !important;
+}
+
+/****************************/
+/********************************    fin home   **************************************/

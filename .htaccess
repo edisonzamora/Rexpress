@@ -12,7 +12,8 @@ RewriteEngine On
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
 # RewriteRule ^pr/(.*)$  pr.php?m=$1 [L]
-RewriteRule ^view/(.*)$    index.php?view=$1 [L]
+RewriteRule ^view/(.*)\.html    index.php?view=$1 [L]
+RewriteRule ^controller/(.*)$  controladores/pr_ini_session.php?controller=$1 [L]
 
 php_flag display_errors Off
 php_flag log_errors On

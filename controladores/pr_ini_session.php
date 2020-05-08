@@ -36,7 +36,10 @@ if ($request_method == "POST") {
     $arry = $usu->getDatosUsuario();
     $_SESSION["user_id"] = $arry[0]["id"];
     $_SESSION["user_nombre"] = $arry[0]["nombre"];
+    $_SESSION["user_apellido"] = $arry[0]["apellido"];
     $_SESSION["user_correo"] = $arry[0]["correo"];
+    $_SESSION["user_telefono"] = $arry[0]["telefono"];
+    $_SESSION["user_imagen"] = $arry[0]["imagen"];
     $_SESSION["user_activo"] = $arry[0]["activo"];
     error_log("Info=> prt_ini_session ; sessiom=>On;  mesaje=>" . $_SESSION["user_nombre"] . "");
     error_log("Info=> prt_ini_session ; sessiom=>On;  mesaje=>" . $_SESSION["user_correo"] . "");
@@ -48,7 +51,7 @@ if ($request_method == "POST") {
       setcookie("user[correo]", base64_encode($_SESSION["user_email"]), time() + 3600, "/");
     }
     error_log("Info=> prt_ini_session ; sessiom=>On;  mesaje=>" . $_SESSION["home"] . "");
-    header("Location: {$path}view/home");
+    header("Location: {$path}view/home.html");
   } else {
     error_log("Info=> prt_ini_session ; sessiom=>Off;  mesaje=>null");
     header("Location: {$path}");

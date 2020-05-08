@@ -17,7 +17,7 @@ include 'view/templates/head.php';
 </style>
 
 <body>
-    <span class="badge badge-pill badge-light">Desarrollo</span>
+    <span class="badge badge-pill badge-light">Pre-Desarrollo</span>
     <div class="rexp-error"></div>
     <?php
     session_start();
